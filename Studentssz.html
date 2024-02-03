@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    <li><a href="Untitled-1.html">
+        <button id="myButton"> Next! </button>
+        </a></li>
+    
+    <div>
+        <label for="name">Name:</label>
+        <span id="name"></span>
+    </div>
+    <div>
+        <label for="grade">Grade:</label>
+        <span id="grade"></span>
+    </div>
+    <div>
+        <label for="enrolled-date">Enrolled Date:</label>
+        <span id="enrolled-date"></span>
+    </div>
+    <div>
+        <label for="hobbies">Hobbies:</label>
+        <span id="hobbies"></span>
+    </div>
+
+    <script>
+        var studentProfile = {
+            name: " Joe Mama ",
+            grade: 12,
+            enrolledDate: "2022-01-19",
+            hobbies: "Reading, Coding"
+        };
+
+        document.getElementById("name").innerHTML = studentProfile.name;
+        document.getElementById("grade").innerHTML = studentProfile.grade;
+        document.getElementById("enrolled-date").innerHTML = studentProfile.enrolledDate;
+        document.getElementById("hobbies").innerHTML = studentProfile.hobbies;
+    </script>
+</body>
+</html>
